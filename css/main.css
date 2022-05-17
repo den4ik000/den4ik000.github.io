@@ -297,6 +297,58 @@ h1, h2, h3, h4, h5, h6 {
 	width: 50%;
 	
 }
+.sales__item {
+	border: 1px solid #e5e5e5e5;
+}
+
+.sales__item.active .sale__content {
+	display: block;
+}
+
+.sale__header{
+	border-bottom: 1px solid #e5e5e5e5;
+	position: relative;
+	padding: 15px 20px 15px 65px;
+	
+}
+
+.sale__header:after{
+	content: "";
+	display: block;
+	width: 16px;
+	height: 16px;
+	border-top: 2px solid #ccc;
+	border-right: 2px solid #ccc;
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	z-index: 1;
+	transform: translateY(-50%);
+    
+
+
+}
+.sale__icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+	z-index: 1;
+	transform: translateY(-50%);
+
+
+}
+.sale__content {
+	padding: 15px 20px;
+	color: #999;
+	font-family:'Montserrat', sans-serif;
+	display: none;
+    font-style: italic;
+}
+
+.sale__title {
+	text-transform: uppercase;
+
+}
 
 
 
